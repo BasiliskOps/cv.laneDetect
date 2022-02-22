@@ -9,3 +9,5 @@ if (cap.isOpened() == False):
 
 while(cap.isOpened()):
     ret, frame = cap.read()
+    if ret == True:
+        cv2.imshow('The North Remembers', frame)
