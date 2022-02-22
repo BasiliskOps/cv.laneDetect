@@ -11,3 +11,4 @@ while(cap.isOpened()):
     ret, frame = cap.read()
     if ret == True:
         cv2.imshow('The North Remembers', frame)
+        if cv2.waitKey(20) & 0xFF == ord('q'):
