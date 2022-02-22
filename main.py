@@ -6,3 +6,6 @@ cap = cv2.VideoCapture('/Users/basilisk/Data_Science/Capstone/cv.laneDetect/driv
 
 if (cap.isOpened() == False):
     print("Video stream failed to initialize")
+
+while(cap.isOpened()):
+    ret, frame = cap.read()
